@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white : hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --body-bg: rgb(245, 216, 241);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background: var(--body-bg);
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.orange-card {
+    background: var(--bright-orange);
+    padding: 50px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.green-card {
+    background: var(--dark-cyan);
+    padding: 50px;
+}
+
+.dark-green-card {
+    background: var(--very-dark-cyan);
+    padding: 50px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+h2 {
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    font-family: "Big shoulders display";
+    font-size: 2em;
+}
+
+p {
+    font-family: "Lexend deca";
+}
+
+.description {
+    color: var(--transparent-white);
+    font-size: 1.2em;
+}
+
+button {
+    width: 180px;
+    padding: 0px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+}
+
+button p {
+    font-size: 1.2em;
+}
+
+.orange-btn {
+    color: var(--bright-orange);
+}
+
+.green-btn {
+    color: var(--dark-cyan);
+}
+
+.dark-green-btn {
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 1440px){
+
+    body {
+        height: 100vh;
+    }
+
+    .card-container {
+        width: 1060px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: 0 auto;
+    }
+
+    .orange-card {
+        background: var(--bright-orange);
+        padding: 50px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 0;
+    }
+
+    .dark-green-card {
+        background: var(--very-dark-cyan);
+        padding: 50px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+    button {
+        margin-top: 60px;
+    }
+}
